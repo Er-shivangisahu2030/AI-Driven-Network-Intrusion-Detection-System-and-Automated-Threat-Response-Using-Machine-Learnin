@@ -1,0 +1,69 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+models/*.joblib
+data/processed/*.parquet
+data/processed/*.csv
+data/processed/class_map.json
+logs/*.csv
+logs/alerts-*.csv.bak
+data/ids.db
+data/ids.db-wal
+data/ids.db-shm
+reports/*.txt
+evaluation/*.txt
+evaluation/*.json
+.DS_Store
+*.egg-info/
+lab/captures/
+lab/recordings/
+lab/.attack_creds
+
+# Raw third-party dataset (CIC-IDS2017 CSVs; ~844 MB, regenerable, not source)
+data/downloads/
+
+# WFP / AV diagnostic capture artifacts (Week-3 firewall-bypass scratch)
+wfp_*.xml
+wfp_*.etl
+wfp_*.etl.cab
+
+# Editor / pre-edit backups
+*.bak*
+
+# Duplicate Phase-II report (keep only the final "FIXED" version)
+reports/FYP Phase-II Report - CORRECTED.docx
+
+# Intermediate doc-audit page renders (scratch, ~13 MB; not a deliverable)
+reports/doc_audit_pages/
+
+# Runtime logs and scratch output
+*.log
+logs/*.out
+diag_output.txt
+
+# Local editor / AI-assistant tooling state (not project source)
+.claude/
+
+# Stale out-of-scope compose file (Docker forbidden by HARD_CONSTRAINTS; not the run path)
+docker/docker-compose.yml
+
+# Root-level developer diagnostic scratch scripts (lab one-offs, not runtime path)
+/check_*.py
+/inspect_db.py
+/verify_ips.py
+
+AGENTS.md
+CLAUDE.md
+CURRENT_STATE.md
+FYP_PHASE_2_FULL_CONTEXT.md
+PROJECT_CONTEXT_FULL.md
+RECONCILIATION_PHASE2.md
+_project/
+_stages/
+defense/EVAL_GAP_ANALYSIS.md
+defense/DEMO_SCRIPT.md
+defense/QA_BANK.md
+*.docx
+assets/
+reports/
